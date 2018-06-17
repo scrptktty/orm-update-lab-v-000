@@ -39,5 +39,6 @@ class Student
   end
 
   def update
-    sql = "INSERT INTO students SET name = ?, grade = ? WHERE id = ? "
+    sql = "INSERT INTO students SET name = ?, grade = ? WHERE id = ?"
+    DB[:conn].execute(sql, self.name, self.grade, self.id)
 end
