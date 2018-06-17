@@ -58,6 +58,7 @@ class Student
     new_student.id = new_student[0]
     new_student.name = new_student[1]
     new_student.grade = new_student[2]
+    new_student
   end
 
 end
